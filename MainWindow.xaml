@@ -77,7 +77,7 @@
                 </GroupBox>
                 <Button Style="{StaticResource answerButton}" Content="Заполнить матрицу 2" HorizontalAlignment="Left" Margin="679,140,0,0" VerticalAlignment="Top" Width="151" Height="26"/>
                 <Button Style="{StaticResource answerButton}" Content="Создать матрицу 2" HorizontalAlignment="Left" Margin="902,139,0,0" VerticalAlignment="Top" Width="153" Height="26"/>
-                <Image Source="\Resources\1.png" HorizontalAlignment="Center" Height="245" VerticalAlignment="Top" Width="184" Margin="0,87,0,0"/>
+                <Image Source="\Resources\1.png" HorizontalAlignment="Center" Height="244" VerticalAlignment="Top" Width="184" Margin="0,30,0,0"/>
             </Grid>
         </GroupBox>
     </Grid>
