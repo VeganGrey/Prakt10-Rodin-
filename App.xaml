@@ -4,13 +4,12 @@
              xmlns:local="clr-namespace:Prakt10"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        
         <!--Все label-->
         <Style TargetType="Label" x:Key="mainLabel">
             <Setter Property="Foreground" Value="White"></Setter>
             <Setter Property="FontFamily" Value="Cascadia Mono"></Setter>
         </Style>
-        
+
         <!--Текст боксы в ответе-->
         <Style TargetType="TextBox" x:Key="AnswerText">
             <Setter Property="BorderBrush" Value="MediumPurple"></Setter>
@@ -31,7 +30,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
         <!--Основные текст боксы-->
         <Style TargetType="TextBox" x:Key="SmallText">
             <Setter Property="BorderBrush" Value="MediumPurple"></Setter>
@@ -59,7 +58,7 @@
             <Setter Property="Foreground" Value="White"></Setter>
             <Setter Property="BorderBrush" Value="Black"></Setter>
             <Setter Property="BorderThickness" Value="1"></Setter>
-                <Setter Property="Template">
+            <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border
@@ -80,8 +79,8 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
-        
+
+
 
 
 
@@ -106,7 +105,7 @@
             </Setter>
         </Style>
 
-        
+
         <!--просто темное окно-->
         <Style TargetType="Window" x:Key="MainWindow">
             <Setter Property="Background" Value="Black"></Setter>
