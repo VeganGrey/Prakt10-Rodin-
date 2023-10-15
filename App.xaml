@@ -15,6 +15,7 @@
             <Setter Property="BorderBrush" Value="MediumPurple"></Setter>
             <Setter Property="BorderThickness" Value="3"></Setter>
             <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
@@ -22,7 +23,9 @@
                                 BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 CornerRadius="10"
-                                ></Border>
+                                >
+                            <ScrollViewer x:Name="PART_ContentHost" VerticalAlignment="Center"/>
+                        </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -33,6 +36,7 @@
             <Setter Property="BorderBrush" Value="MediumPurple"></Setter>
             <Setter Property="BorderThickness" Value="2"></Setter>
             <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
@@ -40,7 +44,9 @@
                                 BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 CornerRadius="6"
-                                ></Border>
+                                >
+                            <ScrollViewer x:Name="PART_ContentHost" VerticalAlignment="Center"/>
+                        </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

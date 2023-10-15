@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prakt10"
         mc:Ignorable="d"
-        Title="Вариант 10: Дунаева,Калитин" Height="585" Width="1084" ResizeMode="NoResize" Style="{StaticResource MainWindow}">
+        Title="Вариант 10: Дунаева,Калитин" Height="585" Width="1084" ResizeMode="NoResize" Style="{StaticResource MainWindow}" WindowStartupLocation="CenterScreen">
     <Grid>
         <Menu VerticalAlignment="Top">
             <MenuItem Header="Матрица1">
@@ -22,8 +22,8 @@
 
         <GroupBox Header="Матрицы" Margin="0,18,0,337" Style="{StaticResource MainGroup}">
             <Grid>
-                <DataGrid x:Name="dataGrib1" Margin="0,28,679,10"/>
-                <DataGrid x:Name="dataGrib2" Margin="658,28,0,10"/>
+                <DataGrid x:Name="dataGrib1" Margin="0,28,679,10" HeadersVisibility="None"/>
+                <DataGrid x:Name="dataGrib2" Margin="658,28,0,10" HeadersVisibility="None"/>
                 <Label Style="{StaticResource mainLabel}" Content="Матрица 1" HorizontalAlignment="Left" Margin="0,2,0,0" VerticalAlignment="Top"/>
                 <Label Style="{StaticResource mainLabel}" Content="Матрица 2" HorizontalAlignment="Left" Margin="658,2,0,0" VerticalAlignment="Top"/>
                 <Label Style="{StaticResource mainLabel}" Content="Ответ" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" Width="56"/>
@@ -39,10 +39,10 @@
             <Grid>
                 <GroupBox Header="Создание матрицы 1" Margin="10,10,658,189" Style="{StaticResource MainGroup}">
                     <Grid>
-                        <TextBox Style="{StaticResource SmallText}" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                        <TextBox Style="{StaticResource SmallText}" x:Name="n1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
                         <Label Style="{StaticResource mainLabel}" Content="- кол-во строк" HorizontalAlignment="Left" Margin="141,6,0,0" VerticalAlignment="Top"/>
                         <Label Style="{StaticResource mainLabel}" Content="- кол-во столбцов" HorizontalAlignment="Left" Margin="141,69,0,0" VerticalAlignment="Top"/>
-                        <TextBox Style="{StaticResource SmallText}" HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                        <TextBox Style="{StaticResource SmallText}" x:Name="m1" HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
                     </Grid>
                 </GroupBox>
 
@@ -54,16 +54,16 @@
                         <TextBox Style="{StaticResource SmallText}" HorizontalAlignment="Left" Margin="10,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
                     </Grid>
                 </GroupBox>
-                <Button Style="{StaticResource answerButton}" Content="Создать матрицу 1" HorizontalAlignment="Left" Margin="24,139,0,0" VerticalAlignment="Top" Width="132" Height="27" Click="Button_Click"/>
+                <Button Style="{StaticResource answerButton}" Content="Создать матрицу 1" HorizontalAlignment="Left" Margin="24,139,0,0" VerticalAlignment="Top" Width="132" Height="27" Click="Create1_Click"/>
                 <Button Style="{StaticResource answerButton}" Content="Заполнить матрицу 1" HorizontalAlignment="Left" Margin="236,139,0,0" VerticalAlignment="Top" Width="150" Height="26"/>
 
 
                 <GroupBox Header="Создание матрицы 2" Margin="662,10,0,189" Style="{StaticResource MainGroup}">
                     <Grid>
-                        <TextBox Style="{StaticResource SmallText}" HorizontalAlignment="Left" Margin="22,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                        <TextBox Style="{StaticResource SmallText}" x:Name="n2" HorizontalAlignment="Left" Margin="22,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
                         <Label Style="{StaticResource mainLabel}" Content="- кол-во строк" HorizontalAlignment="Left" Margin="149,8,0,0" VerticalAlignment="Top"/>
                         <Label Style="{StaticResource mainLabel}" Content="- кол-во столбцов" HorizontalAlignment="Left" Margin="149,65,0,0" VerticalAlignment="Top"/>
-                        <TextBox Style="{StaticResource SmallText}" HorizontalAlignment="Left" Margin="22,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                        <TextBox Style="{StaticResource SmallText}" x:Name="m2" HorizontalAlignment="Left" Margin="22,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
                     </Grid>
                 </GroupBox>
 
@@ -76,8 +76,8 @@
                     </Grid>
                 </GroupBox>
                 <Button Style="{StaticResource answerButton}" Content="Заполнить матрицу 2" HorizontalAlignment="Left" Margin="679,140,0,0" VerticalAlignment="Top" Width="151" Height="26"/>
-                <Button Style="{StaticResource answerButton}" Content="Создать матрицу 2" HorizontalAlignment="Left" Margin="902,139,0,0" VerticalAlignment="Top" Width="153" Height="26"/>
-                <Image Source="\Resources\1.png" HorizontalAlignment="Center" Height="245" VerticalAlignment="Top" Width="184" Margin="0,78,0,0"/>
+                <Button Style="{StaticResource answerButton}" Content="Создать матрицу 2" HorizontalAlignment="Left" Margin="902,139,0,0" VerticalAlignment="Top" Width="153" Height="26" Click="Create2_Click"/>
+                <Image Source="\Resources\1.png" HorizontalAlignment="Center" Height="245" VerticalAlignment="Top" Width="184" Margin="0,87,0,0"/>
             </Grid>
         </GroupBox>
     </Grid>

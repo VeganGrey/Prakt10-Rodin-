@@ -25,9 +25,36 @@ namespace Prakt10
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        int[,] matr1;
+        private void Create1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Test");
+            try
+            {
+                int n = int.Parse(n1.Text);
+                int m = int.Parse(m1.Text);
+                matr1 = new int[n, m];
+                dataGrib1.ItemsSource = VisualArray.ToDataTable(matr1).DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        int[,] matr2;
+        private void Create2_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int n = int.Parse(n2.Text);
+                int m = int.Parse(m2.Text);
+                matr2 = new int[n, m];
+                dataGrib2.ItemsSource = VisualArray.ToDataTable(matr2).DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
