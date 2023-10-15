@@ -54,7 +54,7 @@
                         <TextBox Style="{StaticResource SmallText}" HorizontalAlignment="Left" Margin="10,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
                     </Grid>
                 </GroupBox>
-                <Button Style="{StaticResource answerButton}" Content="Создать матрицу 1" HorizontalAlignment="Left" Margin="24,139,0,0" VerticalAlignment="Top" Width="132" Height="27"/>
+                <Button Style="{StaticResource answerButton}" Content="Создать матрицу 1" HorizontalAlignment="Left" Margin="24,139,0,0" VerticalAlignment="Top" Width="132" Height="27" Click="Button_Click"/>
                 <Button Style="{StaticResource answerButton}" Content="Заполнить матрицу 1" HorizontalAlignment="Left" Margin="236,139,0,0" VerticalAlignment="Top" Width="150" Height="26"/>
 
 
