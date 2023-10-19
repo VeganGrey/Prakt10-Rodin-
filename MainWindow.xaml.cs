@@ -33,8 +33,13 @@ namespace Prakt10
             {
                 int n = int.Parse(n1.Text);
                 int m = int.Parse(m1.Text);
-                matr1 = new int[n, m];
-                dataGrib1.ItemsSource = VisualArray.ToDataTable(matr1).DefaultView;
+                if (n > 10 && m > 10)
+                    MessageBox.Show("Размер исходных массивов не должен превосходить 10х10 элементов");
+                else
+                {
+                    matr1 = new int[n, m];
+                    dataGrib1.ItemsSource = VisualArray.ToDataTable(matr1).DefaultView;
+                }
             }
             catch (Exception ex)
             {
@@ -110,7 +115,7 @@ namespace Prakt10
                 List<int> result1 = Pract5Funcs.GetNegativesMult(matr1);
                 List<int> result2 = Pract5Funcs.GetNegativesMult(matr2);
                 if (result1.Count == 0 && result2.Count == 0)
-                    MessageBox.Show("столбцов, произведение отрицательных " +
+                    MessageBox.Show("Столбцов, произведение отрицательных " +
                         "элементов которых является положительным числом, " +
                         "нет ни для одного из массивов");
                 else
